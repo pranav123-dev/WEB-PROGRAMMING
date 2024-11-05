@@ -1,0 +1,122 @@
+<html>
+
+<head>
+  <title>Student Registration Form </title>
+    <style>
+    body {
+      font-family: arial;
+          }
+    {
+      padding: 40px;
+      width: 500px;
+      margin: 20px auto;
+      background-color: #f1f1f1;
+    }
+    {
+      text-align: center;
+    }
+    fieldset {
+      border: 1px solid #d4d4d4;
+      padding: 20px 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    label {
+      margin-right: 25px;
+      margin-top: 5px;
+      width: 30%;
+      text-align: right;
+      font-weight: bold;
+    }
+    {
+      padding: 3px 10px;
+      border: 2px solid #e2e2e2;
+      width: 70%;
+    }
+    input [type="radio"] {
+      margin-right: 8px;
+    }
+    {
+      color: white;
+      background: #ee9a25;
+      padding: 9px 25px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+    {
+      color: white;
+      background: #c93232;
+      padding: 9px 25px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration From</h2>
+    <form action="">
+      <fieldset>
+       <label>Name</label>
+       <div class="input-field">
+          <input type="text" class="inputs" name="usrname">
+        </div>
+          <label>Email</label>
+          <div class="input-field">
+          <input type="email" class="inputs">
+        </div>
+          <label class="gender">Gender</label>
+          <div class="input-field">
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female"> Female
+        </div>
+          <label class="message">Address</label>
+          <div class="input-field">
+          <textarea class="textarea"></textarea>
+        </div>
+      </fieldset>
+        </div>
+        <div class="input-field">
+          <label class="city">District</label>
+          <select name="city" id="" class="inputs">
+          <option value="0">Select District</option>
+          <option value="1">Trivandrum</option>
+          <option value="2">Kollam</option>
+          <option value="3">Pathanamthitta</option>
+          <option value="4">Alappuzha</option>
+          <option value="5">Kottayam</option>
+          <option value="6">Idukki</option>
+          <option value="7">Ernakulam</option>
+          <option value="8">Thrissur</option>
+          <option value="9">Palakkad</option>
+          <option value="10">Malappurm</option>
+          <option value="11">Kozhikode</option>
+          <option value="12">Wayanad</option>
+          <option value="13">Kannur</option>
+          <option value="14">Kasargod</option>
+          </select>
+        </div>
+        <div class="input-field">
+          <label>Zip code</label>
+          <input type="number" class="inputs">
+        </div>
+        <div class="input-field">
+          <label>Phone No</label>
+          <input type="number" class="inputs">
+        </div>
+      </fieldset>
+      <div class="button">
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
